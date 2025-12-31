@@ -53,9 +53,6 @@ const Prize = () => {
             <p className="text-xl text-white/90 mb-2">
               You've won an eGift Certificate!
             </p>
-            <p className="text-white/80">
-              Scan the QR code below to redeem your prize
-            </p>
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-8">
@@ -63,7 +60,7 @@ const Prize = () => {
               <div className="bg-white p-6 rounded-2xl shadow-2xl">
                 <img
                   src={QRCodeImage}
-                  alt="eGift Certificate QR Code"
+                  alt="eGift Certificate"
                   className="w-full max-w-md mx-auto"
                 />
               </div>
@@ -76,13 +73,19 @@ const Prize = () => {
                     Instructions
                   </h3>
                   <p className="text-white text-lg mb-4">
-                    "Scan this QR to redeem your eGift certificate."
+                    "Download the and save the order number for you eGift
+                    Certificate"
                   </p>
                   <ul className="text-white/90 space-y-2">
-                    <li>• Open your phone's camera app</li>
-                    <li>• Point at the QR code</li>
-                    <li>• Tap the notification that appears</li>
-                    <li>• Follow redemption instructions</li>
+                    <li>• Click the Download button to send the voucher</li>
+                    <li>
+                      • The Voucher Code will be delivered to your email address
+                      kjbusgano0608@gmail.com within 1-5 working days.
+                    </li>
+                    <li>
+                      • Present it to the merchant upon purchasing an item from
+                      the partner merchant.
+                    </li>
                   </ul>
                 </div>
 
@@ -91,14 +94,7 @@ const Prize = () => {
                     onClick={handleDownloadQR}
                     className="w-full py-4 px-6 bg-linear-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 rounded-xl font-bold text-xl text-white transform hover:scale-105 transition-all duration-200"
                   >
-                    📥 DOWNLOAD QR CODE
-                  </button>
-
-                  <button
-                    onClick={() => window.print()}
-                    className="w-full py-4 px-6 bg-linear-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 rounded-xl font-bold text-xl text-white transform hover:scale-105 transition-all duration-200"
-                  >
-                    🖨️ PRINT THIS PAGE
+                    📥 eGift Certificate
                   </button>
                 </div>
               </div>
@@ -108,7 +104,7 @@ const Prize = () => {
           <div className="mt-12 text-center text-white/70">
             <p className="text-sm">
               You won! Here is your Miniso eGift Certificate. Please follow the
-              QR link provided. (Note: This is not sponsored). Click the link to
+              instruction (Note: This is not sponsored). Click the link to
               secure your certificate and remember to take a screenshot for your
               records, or download the eGift directly. Please do not share this
               with anyone else!

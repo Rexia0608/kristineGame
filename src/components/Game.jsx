@@ -78,7 +78,10 @@ const Game = () => {
 
   if (!gameStarted) {
     return (
-      <div className="min-h-screen bg-linear-to-b from-purple-900 to-blue-900 flex items-center justify-center p-4">
+      <div
+        data-aos="flip-left"
+        className="min-h-screen bg-linear-to-b from-purple-900 to-blue-900 flex items-center justify-center p-4"
+      >
         <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 max-w-2xl w-full border border-white/20 text-center">
           <h1 className="text-4xl font-bold text-yellow-400 mb-6">
             Ready to Play?
@@ -100,7 +103,10 @@ const Game = () => {
 
   if (gameState === "won") {
     return (
-      <div className="min-h-screen bg-linear-to-b from-purple-900 to-blue-900 flex items-center justify-center p-4">
+      <div
+        data-aos="flip-left"
+        className="min-h-screen bg-linear-to-b from-purple-900 to-blue-900 flex items-center justify-center p-4"
+      >
         <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 max-w-2xl w-full border border-white/20 text-center">
           <div className="text-6xl mb-4">🏆</div>
           <h1 className="text-4xl font-bold text-yellow-400 mb-4">
@@ -120,7 +126,10 @@ const Game = () => {
 
   if (gameState === "lost") {
     return (
-      <div className="min-h-screen bg-linear-to-b from-purple-900 to-blue-900 flex items-center justify-center p-4">
+      <div
+        data-aos="flip-left"
+        className="min-h-screen bg-linear-to-b from-purple-900 to-blue-900 flex items-center justify-center p-4"
+      >
         <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 max-w-2xl w-full border border-white/20 text-center">
           <div className="text-6xl mb-4">❌</div>
           <h1 className="text-4xl font-bold text-red-400 mb-4">GAME OVER</h1>

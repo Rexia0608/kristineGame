@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import useGameState from "../hooks/useGameState";
-// Username: Kjb2025 | Password: Kjb2025
+// Username: kjbusgano0608@gmail.com | Password: Kjb2025
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -19,7 +19,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (username === "blue" && password === "Kjb2025") {
+    if (username === "kjbusgano0608@gmail.com" && password === "Kjb2025") {
       setIsLoggedIn(true);
       setError("");
       navigate("/");
@@ -29,10 +29,16 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4">
+    <div
+      className="min-h-screen flex items-center justify-center p-4"
+      data-aos="fade-down"
+    >
       <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 max-w-md w-full shadow-2xl border border-white/20">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-yellow-400 mb-2">
+          <h1
+            className="text-4xl font-bold text-yellow-400 mb-2"
+            data-aos="fade-left"
+          >
             A Game for my "Special someone"
           </h1>
           <h2 className="text-3xl font-bold text-white">💙-KJB-💙</h2>
@@ -41,6 +47,7 @@ const Login = () => {
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <input
+              data-aos="zoom-in"
               type="text"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
@@ -51,6 +58,7 @@ const Login = () => {
 
           <div>
             <input
+              data-aos="zoom-in"
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -66,6 +74,7 @@ const Login = () => {
           )}
 
           <button
+            data-aos="zoom-in"
             type="submit"
             className="w-full bg-linear-to-r from-yellow-500 to-orange-500 text-white font-bold py-3 px-4 rounded-xl hover:from-yellow-600 hover:to-orange-600 transform hover:scale-105 transition-all duration-200 text-lg"
           >

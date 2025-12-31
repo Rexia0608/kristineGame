@@ -58,7 +58,7 @@ const Home = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
-          <div className="flex-1">
+          <div data-aos="fade-left" className="flex-1">
             <img
               src={StitchImageWelcome}
               alt="Stitch"
@@ -66,7 +66,7 @@ const Home = () => {
             />
           </div>
 
-          <div className="flex-1 text-center">
+          <div data-aos="fade-right" className="flex-1 text-center">
             <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
               <h2 className="text-3xl font-bold text-white mb-6">
                 Aloha, I'm Stitch!

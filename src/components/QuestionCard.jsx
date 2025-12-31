@@ -63,7 +63,10 @@ const QuestionCard = ({
   };
 
   return (
-    <div className="min-h-screen bg-linear-to-b from-purple-900/70 to-blue-900/70 p-4">
+    <div
+      data-aos="zoom-in"
+      className="min-h-screen bg-linear-to-b from-purple-900/70 to-blue-900/70 p-4"
+    >
       {/* 🎧 Hidden Voiceover Audio */}
       <audio ref={voiceRef} src={questionData.voiceSrc} />
 
@@ -119,14 +122,20 @@ const QuestionCard = ({
               </div>
 
               {/* Question Text */}
-              <div className="bg-black/30 rounded-xl p-6 mb-8 border border-white/10">
+              <div
+                data-aos="flip-left"
+                className="bg-black/30 rounded-xl p-6 mb-8 border border-white/10"
+              >
                 <h2 className="text-2xl md:text-3xl font-bold text-white leading-relaxed">
                   {questionData.question}
                 </h2>
               </div>
 
               {/* Options Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div
+                data-aos="flip-right"
+                className="grid grid-cols-1 md:grid-cols-2 gap-4"
+              >
                 {["A", "B", "C", "D"].map((letter, index) => (
                   <button
                     key={letter}
